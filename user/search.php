@@ -28,7 +28,9 @@ $result = $con->query($sql);
         if ($result->num_rows > 0) {
             // Output data of each row
             while($row = $result->fetch_assoc()) {
-                echo "<li>" . $row["PName"] . " - " . $row["PPrice"] . "</li>";
+                // echo "<li>" . $row["PName"] . " - " . $row["PPrice"] . "</li>";
+                echo "<li><a href='product.php?id=" . $row["Id"] . "'>" . $row["PName"] . "</a> - " . $row["PPrice"] . "</li>";
+                
             }
         } else {
             echo "0 results";
