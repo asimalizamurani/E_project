@@ -2,6 +2,7 @@
 <?php
 
 include "Config.php";
+include './component/header.php';
 
 // Get the search query
 $query = isset($_GET['query']) ? $_GET['query'] : '';

@@ -112,3 +112,14 @@
 .category-nav li.active:hover {
   border-bottom: none; /* Remove underline on hover for the active category */
 }
+
+/* Search css */
+#search {
+  padding: .7rem 1rem;
+    border-radius: 8px;
+}
+
+#search-btn {
+  padding: .7rem;
+    border-radius: 8px;
+}

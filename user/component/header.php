@@ -56,8 +56,8 @@ $count = count($_SESSION['cart']);
                 </span>
                 <!-- Search section -->
                 <form method="GET" action="search.php">
-            <input type="text" name="query" placeholder="Search...">
-            <input type="submit" value="Search">
+            <input type="text" id='search' name="query" placeholder="Search...">
+            <input type="submit" id='search-btn' value="Search">
         </form>
         <!-- Search section ends here -->
             </ul>
@@ -73,6 +73,10 @@ $count = count($_SESSION['cart']);
             <li><a href="Perl.php">Pearl</a></li>
         </ul>
     </div>
+    <!-- Searched prodects section -->
+     <div class="searched-products">
+        
+     </div>
 
 
 </body>
