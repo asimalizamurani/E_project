@@ -11,7 +11,7 @@ $query = isset($_GET['query']) ? $_GET['query'] : '';
 $query = $con->real_escape_string($query);
 
 // SQL query to search the database
-$sql = "SELECT * FROM tblproduct WHERE PName LIKE '%$query%' OR PPrice LIKE '%$query%'";
+$sql = "SELECT * FROM tblproduct WHERE PName LIKE '%$query%' OR PPrice LIKE '%$query%' OR PCategory LIKE '%$query%'";
 $result = $con->query($sql);
 
 ?>
@@ -22,18 +22,43 @@ $result = $con->query($sql);
     <title>Search Results</title>
 </head>
 <body>
+    <div id="searched-products">
     <h1>Search Results</h1>
+    <div id="product-grid">
     <ul>
         <?php
         if ($result->num_rows > 0) {
             // Output data of each row
             while($row = $result->fetch_assoc()) {
                 // echo "<li>" . $row["PName"] . " - " . $row["PPrice"] . "</li>";
-                echo "<li><a href='product.php?id=" . $row["Id"] . "'>" . $row["PName"] . "</a> - " . $row["PPrice"] . "</li>";
+                // echo "<li><a href='product.php?id=" . $row["Id"] . "'>" . $row["PName"] . "</a> - " . $row["PPrice"] . "</li>";
+
+                // The complete card
+                echo "
+               
+                 <div class='card'>
+                 <div class='img-section'>
+                     <img src='../admin/product/$row[Pimage]' alt=''>
+                     </div>
+                     <div class='card-contents'>
+                         <h4>$row[PName]</h4>
+                         <div class='card-center-content'>
+                         <p>RS: $row[PPrice]</p>
+                         <input type='hidden' name='PName' value='$row[PName]'>
+                         <input type='hidden' name='PPrice' value='$row[PPrice]'>
+                         <input type='number'name='PQuantity' class='qnt' placeholder='0'>
+                         </div>
+                         <div class='cart-btn'>
+                         <input type='submit' name='addCart' class='add-btn' value='Add To Cart'>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 ";
                 
             }
         } else {
-            echo "0 results";
+            echo "<p id='ptext'>Product not found</p id='ptext'>";
         }
 
         $stmt = $con->prepare("SELECT * FROM tblproduct WHERE PName LIKE ? OR PPrice LIKE ?");
@@ -43,7 +68,14 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 
-        ?>
+
+?>
     </ul>
-</body>
-</html>
+    </div>
+</div>
+
+<?php
+
+include './component/footer.php';
+
+?>

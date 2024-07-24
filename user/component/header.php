@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/search.css">
     <!-- <link rel="stylesheet" href="./css/design.css"> -->
 
 </head>

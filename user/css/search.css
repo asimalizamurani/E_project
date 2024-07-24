@@ -1,0 +1,21 @@
+/* styles.css */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+}
+
+#ptext {
+    font-size: 21px;
+    color: #443c3c;
+    padding: 3rem 32rem
+}
