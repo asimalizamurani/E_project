@@ -1,0 +1,86 @@
+/* Reset styles for a cleaner slate (optional) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container */
+  .table-container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the table container horizontally */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 2rem; /* Add some space after the heading */
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove default table borders */
+  }
+  
+  th, td {
+    padding: 0.75rem 1rem; /* Adjust padding for better readability */
+    border: 1px solid #ddd; /* Table cell borders */
+    text-align: left; /* Left-align content */
+  }
+  
+  thead th {
+    background-color: #f2f2f2; /* Lighter background for table headers */
+    font-weight: bold; /* Bold text for headers */
+  }
+  
+  /* Product quantity input */
+  .table-container input[type="number"] {
+    width: 50px; /* Adjust width as needed */
+    padding: 5px; /* Adjust padding for better alignment */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center; /* Center-align quantity values */
+  }
+  
+  /* Update and Delete buttons */
+  .update-btn, .delete-btn {
+    padding: 5px 10px; /* Adjust padding for buttons */
+    background-color: #ddd; /* Lighter background for buttons */
+    border: none; /* Remove default button borders */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable elements */
+    transition: background-color 0.2s ease-in-out; /* Smooth color transition on hover */
+  }
+  
+  .update-btn:hover, .delete-btn:hover {
+    background-color: #ccc; /* Darker background on hover */
+  }
+  
+  .delete-btn {
+    background-color: #f00; /* Red background for delete button */
+    color: #fff; /* White text for delete button */
+  }
+  
+  .delete-btn:hover {
+    background-color: #c00; /* Darker red on hover for delete button */
+  }
+  
+  /* Total box */
+  .total-box {
+    margin-top: 1rem; /* Add some space above the total box */
+    text-align: right; /* Right-align the total amount */
+  }
+  
+  .total-box h3 {
+    margin-bottom: 0.5rem; /* Reduce margin below the "Total" text */
+  }
+  
+  .total-box h1 {
+    font-size: 1.5rem; /* Larger font size for the total amount */
+    color: #333; /* Darker text color for emphasis */
+  }
+  
+  #c-heading {
+    text-align: center;
+    margin: 1rem 0;
+  }

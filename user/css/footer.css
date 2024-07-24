@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+.footer-container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgb(38, 37, 37);
+    padding: 70px 0;
+}
+
+.content{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.content h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.content h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: purple;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.content ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.content ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: darkgray;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.content ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+
+.content .logo a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.content .logo a:hover{
+    color: white;
+    background-color: black;
+}
+
+.content .logo {
+    display: flex;
+}
+
+.content .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

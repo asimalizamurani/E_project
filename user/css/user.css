@@ -1,0 +1,41 @@
+#main-title span {
+    color: red;
+    letter-spacing: 12px;
+}
+
+.nav-left-element {
+    display: flex;
+}
+
+ul li,
+ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.category-nav {
+    background-color: rgb(255, 153, 0);
+    margin-top: 8px;
+}
+
+.category-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.category-nav ul li {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* Card styling */
+.card {
+    border: 1px solid red;
+    width: 21vw;
+    padding: 16px 13px;
+    margin: 1rem;
+    border-radius: 8px;
+}

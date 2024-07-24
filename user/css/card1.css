@@ -1,0 +1,70 @@
+/* Yet it is not connected to the pages */
+
+/* Overall card container */
+.card-section {
+    display: flex; /* Allow horizontal layout for cards */
+    flex-wrap: wrap; /* Wrap cards to fit available space */
+    justify-content: space-between; /* Distribute cards evenly with some space */
+    margin: 2rem 0; /* Add some margin for spacing */
+  }
+  
+  /* Card styling */
+  .card {
+    width: 25%; /* Adjust width as needed based on number of cards per row */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 1rem; /* Add some space between cards */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Prevent image overflow */
+    cursor: pointer; /* Indicate clickable elements (optional) */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Slight zoom on hover for emphasis (optional) */
+  }
+  
+  /* Card image */
+  .card img {
+    width: 100%; /* Fill card width */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Crop image to fit within the container */
+  }
+  
+  /* Card content container */
+  .card-contents {
+    padding: 1rem;
+  }
+  
+  /* Card title */
+  .card-contents h4 {
+    font-size: 1rem; /* Adjust font size for product title */
+    margin-bottom: 0.5rem; /* Add some space below the title */
+  }
+  
+  /* Card price */
+  .card-contents p {
+    font-weight: bold; /* Emphasize price */
+    margin-bottom: 0.75rem; /* Add some space below the price */
+  }
+  
+  /* Card button container */
+  .cart-btn {
+    text-align: center; /* Center the button horizontally */
+  }
+  
+  /* Add to Cart button */
+  .add-btn {
+    background-color: #333; /* Darker background for the button */
+    color: #fff; /* White text for the button */
+    padding: 0.75rem 1.5rem; /* Adjust padding for the button */
+    border: none; /* Remove default button borders */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .add-btn:hover {
+    background-color: #222; /* Darker background on hover */
+  }
+  

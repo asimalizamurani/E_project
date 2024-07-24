@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation bar styles start from line 15 to line  38*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 1rem;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.nav-heading a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-right ul {
+    display: flex;
+}
+
+.nav-right ul a {
+    padding: 1rem;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+    /* font-size: 1.2rem; */
+}
+
+/* Dashboar styles start from line 40 and ends in line */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard h2 {
+    margin: 7px 0;
+}
+
+.dashboard-texts {
+    background-color: rgb(255, 60, 0);
+    padding: 10px 0;
+    text-align: center;
+    width: 50%;
+}
+.dashboard-texts a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.table-data {
+    border: 1px solid black;
+ 
+ }
+ 
+ .table-head {
+     border: 1px solid red;
+ }

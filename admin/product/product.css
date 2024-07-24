@@ -1,0 +1,52 @@
+/* My store form styles are here */
+
+#admin-form {
+    border: 2px solid rgb(0, 149, 255);
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: rgba(243, 200, 44, 0.906);
+    font-size: 1.3rem;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 13px;
+}
+
+.form-fields input {
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #80808066;
+    border-radius: 5px;
+}
+
+.form-fields select {
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #80808066;
+    border-radius: 5px;
+}
+
+.form-fields select option {
+    color: rgb(5, 145, 205);
+    font-weight: 500;
+}
+
+.form-section button {
+    background: #ff5700;
+    font-weight: bold;
+    margin: 6px 1rem;
+    width: 95%;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+}
