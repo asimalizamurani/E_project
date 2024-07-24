@@ -23,7 +23,19 @@ body {
 
 include('Config.php');
 
-$id = isset($_GET['id']) ? $_GET['id'] : '';
+// For checking purpose start here
+// include('Config.php');
+
+$id = isset($_GET['Id']) ? $_GET['Id'] : '';
+
+// Ensure the ID is a valid integer
+if (!is_numeric($id) || $id <= 0) {
+    die("Invalid product ID.");
+}
+
+// For checking purpose end here
+
+// $id = isset($_GET['id']) ? $_GET['id'] : '';
 // echo $id;
 
 // $Record = mysqli_query($con, "SELECT * FROM `tblproduct` WHERE Id = $id");
@@ -65,9 +77,9 @@ mysqli_stmt_close($stmt); // Close prepared statement (important for resource ma
         <label for="">Select Product Category:</label>
         <select class="form-select" name="Pages">
             <option value="Home">Home</option>
-            <option value="Mobiles">Mobile</option>
-            <option value="Bag">Bag</option>
-            <option value="Computer">Laptop</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Pearl">Pearl</option>
         </select>
         </div>
         <input type="hidden" name="id" value="<?php echo $data['Id'] ?>">

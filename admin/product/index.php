@@ -112,7 +112,7 @@ a:hover {
             <td>$row[PPrice]</td>
             <td><img src='$row[Pimage]' height= '90px' width= '100px'></td>
             <td>$row[PCategory]</td>
-            <td class='btn'><a href=''>Delete</a></td>
+            <td name='remove' class='btn'><a href='delete.php?id={$row['Id']}'>Delete</a></td>
             <td class='btn'><a href='update.php? Id=$row[Id]'>Update</a></td>
         </tr>
             
