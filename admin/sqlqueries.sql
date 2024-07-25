@@ -28,3 +28,9 @@ CREATE TABLE tbluser (
     Password VARCHAR(255) NOT NULL,
     Number VARCHAR(20)
 );
+
+-- Create the categories table
+CREATE TABLE categories (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);

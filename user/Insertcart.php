@@ -10,6 +10,13 @@ $product_name = $_POST['PName'];
 $product_price = $_POST['PPrice'];
 $product_quantity = $_POST['PQuantity'];
 
+// Assuming you have access to the submitted PQuantity value
+// $quantity = $_POST['PQuantity'];
+
+if (empty($product_quantity)) {
+    $product_quantity = 1;
+}
+
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }

@@ -39,7 +39,7 @@ include './component/header.php';
                         <td>$i</td>
                         <td><input hidden type='text' name='PName' value='$value[productName]'>$value[productName]</td>
                         <td><input hidden type='text' name='PPrice' value='$value[productPrice]'>$value[productPrice]</td>
-                        <td><input type='number' name='PQuantity' value='$value[productQuantity]'>$value[productQuantity]</td>
+                        <td><input type='number' name='PQuantity' min='1' value='$value[productQuantity]'>$value[productQuantity]</td>
                         <td>$ptotal</td>
                         <td><button name='update' class='update-btn'>Update</button></td>
                         <td><button name='remove' class='delete-btn'>Delete</button></td>

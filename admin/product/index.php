@@ -55,7 +55,7 @@ a:hover {
 </head>
 <body>
     
-<form action="insert.php" method="POST" enctype="multipart/form-data" id="admin-form">
+<form action="insert.php" method="POST" enctype="multipart/form-data" class="admin-form">
     <div class="form-section">
         <h2>Product Detail:</h2>
         <div class="form-fields">
@@ -106,6 +106,7 @@ a:hover {
             while($row = mysqli_fetch_array($Record))
 
             echo"
+            <form action='update.php' method='GET'>
             <tr>
             <td>$row[Id]</td>
             <td>$row[PName]</td>
@@ -113,9 +114,9 @@ a:hover {
             <td><img src='$row[Pimage]' height= '90px' width= '100px'></td>
             <td>$row[PCategory]</td>
             <td name='remove' class='btn'><a href='delete.php?id={$row['Id']}'>Delete</a></td>
-            <td class='btn'><a href='update.php? Id=$row[Id]'>Update</a></td>
+            <td class='btn'><a href='update.php? ID= $row[Id]'>Update</a></td>
         </tr>
-            
+            </form>
             ";
             ?>
         </tbody>

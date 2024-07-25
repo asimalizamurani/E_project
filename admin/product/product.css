@@ -1,6 +1,6 @@
 /* My store form styles are here */
 
-#admin-form {
+.admin-form {
     border: 2px solid rgb(0, 149, 255);
     width: 50%;
     margin: auto;
@@ -49,4 +49,9 @@
     color: #fff;
     font-size: 1rem;
     border: none;
+}
+
+.form-fields img {
+    width: 100px;
+    height: 80px;
 }

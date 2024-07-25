@@ -60,8 +60,7 @@ include './component/header.php';
                  <p>RS: $row[PPrice]</p>
                  <input type='hidden' name='PName' value='$row[PName]'>
                  <input type='hidden' name='PPrice' value='$row[PPrice]'>
-                 <input type='number'name='PQuantity' class='qnt' placeholder='0'>
-                 </div>
+                 <input type='number' name='PQuantity' class='qnt' min='1' value='' placeholder='1'>                 </div>
                  <div class='cart-btn'>
                  <input type='submit' name='addCart' class='add-btn' value='Add To Cart'>
                  </div>

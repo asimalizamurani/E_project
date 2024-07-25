@@ -1,0 +1,64 @@
+.user-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.delete-btn a {
+  text-decoration: none;
+}
+
+.total-users {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .total-users h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background-color: #f3f3f3;
+  }
+  
+  .total-users h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  table {
+    overflow-x: scroll; /* Enable horizontal scrolling if needed */
+  }
+  th,
+  td {
+    display: block; /* Display table cells as block elements */
+  }
+  td {
+    text-align: right; /* Align text to the right */
+  }
+  th:before {
+    content: attr(data-label); /* Add table header text before each cell */
+    font-weight: bold;
+    display: block;
+    text-align: left;
+  }
+}

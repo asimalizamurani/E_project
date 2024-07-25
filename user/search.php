@@ -35,7 +35,7 @@ $result = $con->query($sql);
 
                 // The complete card
                 echo "
-               
+               <form action='Insertcart.php' method='POST'>
                  <div class='card'>
                  <div class='img-section'>
                      <img src='../admin/product/$row[Pimage]' alt=''>
@@ -46,14 +46,14 @@ $result = $con->query($sql);
                          <p>RS: $row[PPrice]</p>
                          <input type='hidden' name='PName' value='$row[PName]'>
                          <input type='hidden' name='PPrice' value='$row[PPrice]'>
-                         <input type='number'name='PQuantity' class='qnt' placeholder='0'>
+                         <input type='number'name='PQuantity' class='qnt' placeholder='1'>
                          </div>
                          <div class='cart-btn'>
                          <input type='submit' name='addCart' class='add-btn' value='Add To Cart'>
                          </div>
                      </div>
                  </div>
-                 
+                 </form>
                  ";
                 
             }
