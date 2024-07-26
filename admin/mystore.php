@@ -11,6 +11,7 @@ include('./component/admin-nav.php');
         <div class="dashboard-texts">
         <a href="product/index.php">Add Post</a>
         <a href="user/index.php">Users</a>
+        <a href="product/category/index.php">Category</a>
         </div>
     </div>
 

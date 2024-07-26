@@ -127,30 +127,25 @@ html, body {
     width: 100%;
     border: 1px solid transparent;
     border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     outline: none;
 }
 
-#newsletter .form {
+.form {
     display: flex;
-    width: 40%;
-    height: 10vh;
-    position: relative;
+    width: 35vw;
 }
 
-#newsletter a {
-    position: absolute;
-    right: 0;
+.form a {
+    width: 8vw;
+    background: lightseagreen;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    background-color: #088178;
-    color: #fff;
-    white-space: nowrap;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    width: 25%;
-    height: 100%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
