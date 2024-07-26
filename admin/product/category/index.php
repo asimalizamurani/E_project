@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
+
+
+<!-- <?php
+//  include ".././../component/admin-nav.php";
+?> -->
+
+
+
     <title>Category Management</title>
-</head>
-<body>
+    <link rel="stylesheet" href=".././../css/category.css">
+    
+
     <h1>Category Management</h1>
 
     <form method="post" action="add_category.php">
@@ -25,7 +31,7 @@
         include "../Config.php";
         $query = "SELECT * FROM `categories`";
         $result = mysqli_query($con, $query);
-        while ($row = mysqli_fetch_array($result)); {
+        while ($row = mysqli_fetch_array($result)) {
         echo "
         <tbody>
          <tr>

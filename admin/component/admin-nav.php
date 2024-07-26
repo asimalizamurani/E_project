@@ -6,6 +6,7 @@
     <title>Admin home page</title>
     <link rel="stylesheet" href="../css/design.css">
     <link rel="stylesheet" href="../css/user-table.css">
+    <!-- <link rel="stylesheet" href="../css/category.css"> -->
 
 </head>
 

@@ -74,6 +74,7 @@ $count = count($_SESSION['cart']);
             <li><a href="Perl.php">Pearl</a></li>
         </ul>
     </div>
+        
     <!-- Searched prodects section -->
      <div class="searched-products">
         
