@@ -7,33 +7,34 @@
   
   /* Main navbar styles */
   .navbar {
-    display: flex; /* Allow horizontal layout for navigation elements */
-    justify-content: space-between; /* Distribute elements evenly horizontally */
-    align-items: center; /* Vertically align content within the navbar */
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    height: 80px; /* Set navbar height */
-    padding: 0 2rem; /* Add some horizontal padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 80px;
+    padding: 0 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
   /* Navigation heading styles */
   .nav-heading {
-    font-size: 1.1rem; /* Larger font size for the logo/title */
-    font-weight: bold; /* Bold text for emphasis */
+    font-size: 1.1rem;
+    font-weight: bold;
   }
   
   .nav-heading a {
-    color: inherit; /* Inherit text color from navbar */
-    text-decoration: none; /* Remove underline from links */
+    color: inherit;
+    text-decoration: none;
   }
   
   /* Navigation links styles */
   .nav-right ul {
-    list-style: none; /* Remove default bullet points */
-    padding: 0; /* Reset padding for better spacing */
-    margin: 0; /* Reset margins for better alignment */
-    display: flex; /* Allow horizontal layout for links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
   }
   
   .nav-right li {
@@ -43,8 +44,8 @@
   .nav-right a {
     color: inherit;
     text-decoration: none;
-    font-size: 1rem; /* Adjust link font size */
-    transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
   }
   
   .nav-right a:hover {
@@ -53,9 +54,9 @@
   
   /* User greeting and login/logout styles */
   .nav-left-element {
-    display: flex; /* Allow horizontal layout for greeting and options */
-    align-items: center; /* Vertically align content within the element */
-    margin-left: auto; /* Move to the right side of the navbar */
+    display: flex;
+    align-items: center;
+    margin-left: auto;
   }
   
   .nav-left-element a {
@@ -67,50 +68,50 @@
   /* Category navigation styles */
   /* Category navigation container */
 .category-nav {
-  display: flex; /* Allow horizontal layout for categories */
-  justify-content: space-between; /* Distribute categories evenly */
-  background-color: #f2f2f2; /* Light gray background */
-  padding: 0.5rem 1rem; /* Add some padding for spacing */
-  border-radius: 5px; /* Rounded corners for a softer look */
-  margin-top: 1rem; /* Add some space above the category navigation */
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
 }
 
 /* Category navigation list */
 .category-nav ul {
-  list-style: none; /* Remove default bullet points */
-  padding: 0; /* Reset padding for better spacing */
-  margin: 0; /* Reset margins for better alignment */
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
 }
 
 /* Category list items (inactive state) */
 .category-nav li {
-  margin-right: 1rem; /* Add space between categories */
-  text-transform: uppercase; /* Convert text to uppercase for a bolder look */
-  font-weight: bold; /* Make category text stand out */
-  transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
-  cursor: pointer; /* Indicate clickable elements */
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .category-nav li a {
-  color: #333; /* Dark gray text color */
-  text-decoration: none; /* Remove underline from links */
+  color: #333;
+  text-decoration: none;
 }
 
 /* Category list items (hover state) */
 .category-nav li:hover {
-  color: #000; /* Black text color on hover */
-  border-bottom: 2px solid #333; /* Add a subtle underline on hover */
+  color: #000;
+  border-bottom: 2px solid #333;
 }
 
 /* Category list items (active state - optional) */
 .category-nav li.active a {
-  color: #fff; /* White text color for the active category */
-  background-color: #333; /* Dark gray background for the active category */
+  color: #fff;
+  background-color: #333;
 }
 
 .category-nav li.active:hover {
-  border-bottom: none; /* Remove underline on hover for the active category */
+  border-bottom: none;
 }
 
 /* Search css */

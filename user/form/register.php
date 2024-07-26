@@ -23,7 +23,7 @@
         <label>Enter your password</label>
       </div>
       <div class="input-field">
-        <input type="password" name="number" required>
+        <input type="number" name="number" required>
         <label>Enter your number</label>
       </div>
 

@@ -67,7 +67,11 @@ $count = count($_SESSION['cart']);
         </div>
     </div>
 
+             <!-- Category Navbar -->
     <div class='category-nav'>
+        <?php
+        include "./Config.php";
+        ?>
         <ul>
             <li><a href="Gold.php">Gold</a></li>
             <li><a href="Silver.php">Silver</a></li>

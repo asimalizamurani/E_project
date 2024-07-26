@@ -19,8 +19,10 @@ footer {
     justify-content: space-around;
 }
 
-ul{
+.content ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer{
