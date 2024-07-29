@@ -1,0 +1,70 @@
+@media (max-width: 476px) {
+  /* admin navbar */
+  #bar {
+    display: flex;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-heading h1 {
+    font-size: 20px;
+    margin: 1rem 0.2rem;
+  }
+
+  .sidebar-contents ul {
+    padding: 1rem 2rem;
+    list-style: none;
+}
+
+.sidebar-contents ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+  .dashboard h2 {
+    font-size: 17px;
+}
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-texts {
+    width: 100%;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+
+  .admin-form {
+    width: 100%;
+  }
+
+  /* Users Data */
+  #user-table thead tr,
+  #user-table tbody tr {
+    display: flex;
+  }
+
+  .user-container {
+    display: block;
+    overflow: auto;
+  }
+
+  #category-section {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+  }
+
+
+}

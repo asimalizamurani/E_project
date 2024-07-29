@@ -28,6 +28,10 @@
       width: 60vw;
      }
 
+     .card-section {
+      padding: 0 2rem;
+     }
+
      /* Banner Section */
 
      #banner {

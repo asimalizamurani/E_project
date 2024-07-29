@@ -8,13 +8,11 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ccc;
-  overflow: auto;
 }
 
 th,
 td {
   padding: 12px 15px;
-  text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
@@ -41,24 +39,3 @@ th {
     font-size: 2rem;
     font-weight: bold;
   }
-  
-
-/* Responsive design */
-@media screen and (max-width: 600px) {
-  table {
-    overflow-x: scroll; /* Enable horizontal scrolling if needed */
-  }
-  th,
-  td {
-    display: block; /* Display table cells as block elements */
-  }
-  td {
-    text-align: right; /* Align text to the right */
-  }
-  th:before {
-    content: attr(data-label); /* Add table header text before each cell */
-    font-weight: bold;
-    display: block;
-    text-align: left;
-  }
-}

@@ -4,6 +4,7 @@ include('./component/admin-nav.php');
 ?>
 
 <link rel="stylesheet" href="./css/design.css">
+<link rel="stylesheet" href="./css/responsive.css">
 
                                        <!-- Dashboard -->
     <div class="dashboard">

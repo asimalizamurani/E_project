@@ -6,55 +6,12 @@
     <title>Product page</title>
     <link rel="stylesheet" href="../design.css">
     <link rel="stylesheet" href="product.css">
-    <style>
-       table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px auto;
-}
+    <link rel="stylesheet" href="../css/responsive.css">
 
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-
-td img {
-    width: 50px;
-    height: auto;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-/* Responsive Styles */
-/* @media only screen and (max-width: 768px) { */
-    /* Stack columns on small screens */
-    /* th, td:not(:first-child) {
-        display: block;
-    }
-    td:first-child {
-        font-weight: bold;
-    }
-} */
-
-    
-    </style>
 </head>
 <body>
     
+<div class="product-form">
 <form action="insert.php" method="POST" enctype="multipart/form-data" class="admin-form">
     <div class="form-section">
         <h2>Product Detail:</h2>
@@ -82,9 +39,10 @@ a:hover {
         <button name="submit" class="form-control">Uploads</button>
     </div>
 </form>
+</div>
 
                            <!-- Fetch Data -->
-
+  <div class="table-container">
       <table>
         <thead>
             <tr>
@@ -121,6 +79,7 @@ a:hover {
             ?>
         </tbody>
     </table>
+    </div>
 
 </body>
 </html>

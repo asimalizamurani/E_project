@@ -14,7 +14,6 @@ form {
 table {
     width: 100%;
     border-collapse: collapse;
-    overflow-x: scroll;
 }
 
 th, td {
@@ -56,27 +55,4 @@ form label {
     font-weight: 600;
     margin-right: 1rem;
 }
-
-
-
-@media screen and (max-width: 600px) {
-    table {
-      overflow-x: scroll;
-    }
-  
-    th, td {
-      display: block;
-      width: 100%;
-    }
-  
-    td {
-      text-align: right;
-    }
-  
-    th:before {
-      content: attr(data-label);
-      display: block;
-      text-align: left;
-    }
-  }
   

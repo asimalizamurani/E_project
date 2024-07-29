@@ -7,7 +7,7 @@ include "../component/admin-nav.php";
 
 <div class="user-container">
 
-<table>
+<table id="user-table">
         <thead>
             <tr>
                 <th>ID</th>

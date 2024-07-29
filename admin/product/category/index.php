@@ -8,16 +8,20 @@
 
     <title>Category Management</title>
     <link rel="stylesheet" href=".././../css/category.css">
+    <link rel="stylesheet" href=".././../css/responsive.css">
     
 
     <h1>Category Management</h1>
 
+    <div id="category-section">
     <form method="post" action="add_category.php">
         <label for="category_name">Category Name:</label>
         <input type="text" name="category_name" required>
         <button name="submit" type="submit">Add Category</button>
     </form>
+    </div>
 
+    <div id="category-table">
     <table>
         <thead>
             <tr>
@@ -44,5 +48,6 @@
         }
             ?>
     </table>
+    </div>
 </body>
 </html>
