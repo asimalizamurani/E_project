@@ -69,7 +69,8 @@
   /* Category navigation container */
 .category-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /* height: 20px; */
   background-color: #f2f2f2;
   padding: 0.5rem 1rem;
   border-radius: 5px;

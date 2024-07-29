@@ -1,6 +1,18 @@
 
 
 @media (max-width: 476px) {
+
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+}
+.navbar {
+    padding: 0 .7rem;
+}
+
     .nav-right ul {
         display: none;
     }
@@ -9,9 +21,96 @@
         display: block;
       }
 
-    /* #menuicon i {
-        display: block;
-      } */
+     .card {
+      width: 100%;
+     }
 
-    
+     .card img {
+      width: 60vw;
+     }
+
+     /* Banner Section */
+
+     #banner {
+      height: 20vh;
+     }
+
+     #banner h2 {
+      font-size: 13px;
+     }
+
+     #banner .embtn {
+      padding: .5rem 1rem;
+      font-size: 11px;
+  }
+
+  #banner h4 {
+    font-size: 14px;
+}
+
+/* Newsletter section */
+#newsletter {
+  padding: 1rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.form a {
+  font-size: 13px;
+  width: 30vw;
+  font-weight: 500;
+}
+
+#newsletter h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#newsletter p {
+  line-height: 1.1rem;
+  font-size: 12px;
+  margin: 9px 0;
+}
+
+.footer {
+  padding: 20px 0;
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.footer-container .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Initial 2-column layout */
+  gap: 16px; /* Adjust gap between columns as needed */
+}
+
+.content .logo {
+  display: block;
+}
+
+.content .logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 11px;
+}
+
+.content h4 {
+  font-size: 13px;
+  width: 82px;
+}
+
+.content ul li a {
+  font-size: 12px;
+}
+
+.content {
+  width: 100%;
+  padding: 0 10px;
+}
+
+
 }

@@ -11,7 +11,8 @@ include './component/header.php';
         <video src="video/bgvideo.mp4" muted autoplay loop></video>
     </div>
 
-    <div id="logo-section">
+    <!-- Logo section may be i'll be adding it for further -->
+    <!-- <div id="logo-section">
         <div class="logos">
         <img src="logos/logo1.jpg" alt="">
         </div>
@@ -31,7 +32,7 @@ include './component/header.php';
         <img src="logos/logo6.png" alt="">
         </div>
 
-    </div>
+    </div> -->
 
     <!-- Card Section -->
     <div class='card-section'>
