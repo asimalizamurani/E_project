@@ -1,0 +1,17 @@
+
+
+@media (max-width: 476px) {
+    .nav-right ul {
+        display: none;
+    }
+
+    #menuicon {
+        display: block;
+      }
+
+    /* #menuicon i {
+        display: block;
+      } */
+
+    
+}
