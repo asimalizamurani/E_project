@@ -68,9 +68,9 @@
                         </li>
                     </a>
 
-                    <a href="#">
+                    <!-- <a href=".../admin/form/login.php">
                         <li>Admin</li>
-                    </a>
+                    </a> -->
                 </span>
                 <!-- Search section -->
                 <form method="GET" action="search.php">
@@ -119,9 +119,9 @@
                         </li>
                     </a>
 
-                    <a href="#">
+                    <!-- <a href="#">
                         <li>Admin</li>
-                    </a>
+                    </a> -->
                 </span>
                 <!-- Search section -->
                 <!-- <form method="GET" action="search.php">
@@ -156,16 +156,6 @@
 
     <!-- <script src="index.js"></script> -->
      <script>
-        // let menuBar = document.querySelector('#menuicon');
-// let sideBar = document.querySelector('.sidebar');
-
-// menuBar.addEventListener('click', function() {
-//     sideBar.classList.remove('dnone');
-// })
-
-// menuBar.addEventListener('click', function() {
-//     console.log('clicked');
-// })
 
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');

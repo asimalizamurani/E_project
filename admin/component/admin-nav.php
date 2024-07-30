@@ -42,7 +42,7 @@ if (!$_SESSION['admin']) {
                 <a href="#">
                     <li>Hello <?php echo $_SESSION['admin'] ?> </li>
                 </a>
-                <a href="form/logout.php">
+                <a href="form/login.php">
                     <li>Logout</li>
                 </a>
                 <a href="#">

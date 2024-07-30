@@ -80,7 +80,7 @@ body {
 .admin-sidebar {
   width: 100%;
   height: 15%;
-  background-color: lightseagreen;
+  background-color: rgba(56, 56, 56, 0.914);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
