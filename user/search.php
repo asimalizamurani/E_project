@@ -20,6 +20,7 @@ $result = $con->query($sql);
 <html>
 <head>
     <title>Search Results</title>
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <div id="searched-products">

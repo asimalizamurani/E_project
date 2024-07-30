@@ -12,6 +12,22 @@
     padding: 0 .7rem;
 }
 
+#mobile-searchbar {
+  display: block;
+  width: 100%;
+}
+
+#search-form {
+  width: 100%;
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+#search {
+  width: 80%;
+}
+
     .nav-right ul {
         display: none;
     }

@@ -84,12 +84,15 @@
         </div>
 
 
+
         <!-- Mobile responsive navbar -->
         <div id="menuicon">
             <i id="bar" class="fas fa-bars"></i>
             
         </div>
     </div>
+
+     
 
     <!-- Side navbar for phones -->
     <!-- <div class="sidebar"> -->
@@ -134,7 +137,13 @@
         </div>
             <!-- </div> -->
 
-
+<!-- Search field with a button -->
+<div id="mobile-searchbar">
+        <form method="GET" action="search.php" id="search-form">
+                    <input type="text" id='search' name="query" placeholder="Search...">
+                    <button id="search-btn">Search</button>
+                </form>
+                </div>  
 
     <!-- Category Navbar -->
     <div class='category-nav'>
