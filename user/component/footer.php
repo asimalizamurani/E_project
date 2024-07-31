@@ -29,7 +29,7 @@
             <ul>
             <li><a href="Gold.php">Gold Jewellry</a></li>
             <li><a href="Silver.php">Silver Jewellry</a></li>
-            <li><a href="Perl.php">Pearl</a>Pearl Jewellry</li>
+            <li><a href="Perl.php">Pearl Jewellry</a></li>
             </ul>
         </div>
         <div class="content">

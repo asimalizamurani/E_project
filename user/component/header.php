@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/userprofile.css">
 
 </head>
 
