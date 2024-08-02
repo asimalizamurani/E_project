@@ -25,5 +25,6 @@ let cursor = document.querySelector('#cursor');
 
 videoSection.addEventListener("mousemove", (dts) => {
     // console.log(dts)
-    cursor.style.left = dts.x =+ 'px';
+    cursor.style.left = dts.x += 'px';
+    cursor.style.top = dts.y += 'px';
 })
