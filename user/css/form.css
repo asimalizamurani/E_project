@@ -19,7 +19,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg"), #000;
+    /* background: url("https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg"), #000; */
+    background: url("../images/loginbg.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -42,12 +43,12 @@
   h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
   }
   
   .input-field {
     position: relative;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #a3a3a3;
     margin: 15px 0;
   }
   
@@ -56,10 +57,11 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color: #fff;
+    color: #000;
     font-size: 16px;
     pointer-events: none;
     transition: 0.15s ease;
+    font-weight: 700;
   }
   
   .input-field input {
@@ -69,7 +71,7 @@
     border: none;
     outline: none;
     font-size: 16px;
-    color: #fff;
+    color: #000;
   }
   
   .input-field input:focus~label,
@@ -84,11 +86,11 @@
     align-items: center;
     justify-content: space-between;
     margin: 25px 0 35px 0;
-    color: #fff;
+    color: #000;
   }
   
   #remember {
-    accent-color: #fff;
+    accent-color: #000;
   }
   
   .forget label {
@@ -101,7 +103,7 @@
   }
   
   .wrapper a {
-    color: #efefef;
+    color: #000;
     text-decoration: none;
   }
   
@@ -131,10 +133,10 @@
   .register {
     text-align: center;
     margin-top: 30px;
-    color: #fff;
+    color: #000;
   }
 
   p #login-btn {
-    color: rgb(205, 205, 205);
+    color: #000;
     margin-left: 10px;
   }

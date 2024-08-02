@@ -99,3 +99,5 @@ include './component/header.php';
     <?php include './component/footer.php'; ?>
     </div>
 
+    <script src="./JS/index.js"></script>
+

@@ -46,6 +46,7 @@
 
     </div>
 
+    <script src="./JS/index.js"></script>
 
 <?php 
      include './component/footer.php';
