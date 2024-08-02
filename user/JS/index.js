@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // alert("hello");
     const cards = document.querySelectorAll('.card');
   
     const handleScroll = () => {
@@ -19,3 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check on page load
   });
+
+//   cursor 
+let videoSection = document.querySelector('#video-section');
+let cursor = document.querySelector('#cursor');
+
+videoSection.addEventListener("mousemove", (dts) => {
+    // console.log(dts)
+    cursor.style.left = dts.x =+ 'px';
+})

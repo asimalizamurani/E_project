@@ -16,15 +16,24 @@ html, body {
 }
 
 #video-section {
+    position: relative;
     width: 100%;
     height: 80vh;
-    /* background-color: red; */
+    /* background-color: yellow; */
 }
 
 #video-section video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#cursor {
+    position: absolute;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
 }
 
 /* Logo Section Styles start here */

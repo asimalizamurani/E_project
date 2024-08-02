@@ -9,6 +9,9 @@ include './component/header.php';
     <!-- Video Section -->
     <div id="video-section">
         <video src="video/bgvideo.mp4" muted autoplay loop></video>
+
+        <!-- cursor -->
+         <div id='cursor'></div>
     </div>
 
     <!-- Logo section may be i'll be adding it for further -->
