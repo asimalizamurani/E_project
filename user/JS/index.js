@@ -28,3 +28,15 @@ videoSection.addEventListener("mousemove", (dts) => {
     cursor.style.left = dts.x += 'px';
     cursor.style.top = dts.y += 'px';
 })
+
+videoSection.addEventListener("mouseenter", () => {
+    // console.log(dts)
+    cursor.style.opacity = '1';
+    cursor.style.scale = '1.5';
+})
+
+videoSection.addEventListener("mouseleave", () => {
+    // console.log(dts)
+    cursor.style.opacity = '0';
+    cursor.style.scale = '0';
+})

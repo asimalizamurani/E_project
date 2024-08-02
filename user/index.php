@@ -8,6 +8,9 @@ include './component/header.php';
 
     <!-- Video Section -->
     <div id="video-section">
+        <div id="contents">
+            <h2>Elevate your style with exquisite jewelry. Perfect for every occasion.</h2>
+        </div>
         <video src="video/bgvideo.mp4" muted autoplay loop></video>
 
         <!-- cursor -->
