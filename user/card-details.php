@@ -22,8 +22,10 @@ echo "
 
 <form action='Insertcart.php' method='POST'>
 <div class='product-details'>
-    <div class='image'>
-    <img src='../admin/product/$row[Pimage]' alt=''>
+    <div class='image imageCon'>
+    <img class='img' src='../admin/product/$row[Pimage]' alt=''>
+    <div class='lens'></div>
+    
     </div>
     <div class='pcontents'>
         <h2>$row[PName]</h2>
@@ -34,6 +36,9 @@ echo "
                  <input type='hidden' name='PPrice' value='$row[PPrice]'>
                  <input type='number' name='PQuantity' class='qnt' min='1' value='' placeholder='1'>               
                    </div>
+
+                   <div class='result'></div>
+
     </div>
     </div>
     </form>
@@ -76,6 +81,8 @@ echo "
 
 
 <script src="./JS/index.js"></script>
+
+<script src="./JS/imghover.js"></script>
         
 <?php
 include './component/footer.php';

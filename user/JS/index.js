@@ -23,11 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
 let videoSection = document.querySelector('#video-section');
 let cursor = document.querySelector('#cursor');
 
-videoSection.addEventListener("mousemove", (dts) => {
-    // console.log(dts)
-    cursor.style.left = dts.clientX += 'px';
-    cursor.style.top = dts.clientY += 'px';
-})
+let videoSectionRect = videoSection.getBoundingClientRect()
+let cursorRect = cursor.getBoundingClientRect()
+// videoSection.addEventListener("mousemove", (dts) => {
+//     // console.log(dts)
+//     let x = dts.clientX
+//     let y = dts.clientY
+//     cursor.style.left = x + 'px';
+//     cursor.style.top = y + 'px';
+// })
+
+videoSection.addEventListener("mousemove", moveCursor)
+
+function moveCursor(dts) {
+    let x = dts.clientX - videoSectionRect.left - cursorRect.width / 2
+    let y = dts.clientY - videoSectionRect.top - cursorRect.height / 2
+    cursor.style.left = x + 'px';
+    cursor.style.top = y + 'px';
+}
 
 videoSection.addEventListener("mouseenter", () => {
     cursor.style.opacity = '1';
@@ -38,3 +51,4 @@ videoSection.addEventListener("mouseleave", () => {
     cursor.style.opacity = '0';
     cursor.style.scale = '0';
 })
+
