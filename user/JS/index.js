@@ -19,24 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll(); // Initial check on page load
   });
 
-//   cursor 
+//   Cursor JS code
 let videoSection = document.querySelector('#video-section');
 let cursor = document.querySelector('#cursor');
 
 videoSection.addEventListener("mousemove", (dts) => {
     // console.log(dts)
-    cursor.style.left = dts.x += 'px';
-    cursor.style.top = dts.y += 'px';
+    cursor.style.left = dts.clientX += 'px';
+    cursor.style.top = dts.clientY += 'px';
 })
 
 videoSection.addEventListener("mouseenter", () => {
-    // console.log(dts)
     cursor.style.opacity = '1';
     cursor.style.scale = '1.5';
 })
 
 videoSection.addEventListener("mouseleave", () => {
-    // console.log(dts)
     cursor.style.opacity = '0';
     cursor.style.scale = '0';
 })

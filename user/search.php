@@ -75,6 +75,8 @@ $result = $stmt->get_result();
     </div>
 </div>
 
+<script src="./JS/index.js"></script>
+
 <?php
 
 include './component/footer.php';

@@ -8,6 +8,10 @@ html, body {
     margin: 2rem 0;
 }
 
+.card-section a {
+    text-decoration: none;
+}
+
 #main-heading {
     color: orange;
     text-align: center;

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/userprofile.css">
+    <link rel="stylesheet" href="./css/product-details.css">
 
 </head>
 
