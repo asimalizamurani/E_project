@@ -14,7 +14,7 @@ $result = mysqli_query($con, $query);
 $row = mysqli_fetch_assoc($result);
 
 // Display product details
-
+    
 
 echo "
 <link rel='stylesheet' href='./css/product-details.css'>
@@ -32,15 +32,51 @@ echo "
         <p class='category'>Category: $row[PCategory] </p>
         <input type='hidden' name='PName' value='$row[PName]'>
                  <input type='hidden' name='PPrice' value='$row[PPrice]'>
-                 <input type='number' name='PQuantity' class='qnt' min='1' value='' placeholder='1'>                 </div>
-
-                 
-                 
+                 <input type='number' name='PQuantity' class='qnt' min='1' value='' placeholder='1'>               
+                   </div>
     </div>
     </div>
     </form>
 ";
-        
+?>
 
+<h2 id='top-products'>Top Products</h2>
+<div class="cards suggested-products">
+    <?php
+    include 'Config.php';
+    $Record = mysqli_query($con, "select * from tblproduct");
+    while ($row = mysqli_fetch_array($Record)) {
+        $check_page = $row['PCategory'];
+        if ($check_page === 'Home') {
+
+            echo "
+            <a href='card-details.php?productId=$row[Id]'>
+                <div class='card'>
+                    <div class='img-section'>
+                        <img src='../admin/product/$row[Pimage]' alt=''>
+                    </div>
+                    <div class='card-contents'>
+                        <h4>$row[PName]</h4>
+                        <div class='card-center-content'>
+                            <p>RS: $row[PPrice]</p>
+                            
+                        </div>
+                        <div class='cart-btn'>
+                            <input type='submit' name='addCart' class='add-btn' value='See More'>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            ";
+
+        }
+    }
+    ?>
+</div>
+
+
+<script src="./JS/index.js"></script>
+        
+<?php
 include './component/footer.php';
 ?>
