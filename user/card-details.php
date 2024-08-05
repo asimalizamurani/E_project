@@ -17,7 +17,7 @@ $row = mysqli_fetch_assoc($result);
     
 
 echo "
-<link rel='stylesheet' href='./css/product-details.css'>
+
 
 
 <form action='Insertcart.php' method='POST'>
@@ -46,7 +46,7 @@ echo "
 ?>
 
 <h2 id='top-products'>Top Products</h2>
-<div class="cards suggested-products">
+<div class='related-cards'>
     <?php
     include 'Config.php';
     $Record = mysqli_query($con, "select * from tblproduct");
@@ -55,7 +55,10 @@ echo "
         if ($check_page === 'Home') {
 
             echo "
+
+       
             <a href='card-details.php?productId=$row[Id]'>
+            <div class='top-cards'>
                 <div class='card'>
                     <div class='img-section'>
                         <img src='../admin/product/$row[Pimage]' alt=''>
@@ -71,7 +74,9 @@ echo "
                         </div>
                     </div>
                 </div>
-            </a>
+                </div>
+                </a>
+          
             ";
 
         }

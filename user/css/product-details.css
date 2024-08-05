@@ -10,24 +10,17 @@
 }
 
 .image {
-  /* border: 2px solid green; */
   width: 30vw;
   height: 60vh;
   border-radius: 8px;
-  /* overflow: hidden; */
   box-shadow: 0px 0px 7px gray;
   position: relative;
-}
-
-.imageCon {
-  /* position: relative; */
 }
 
 .lens {
   position: absolute;
   top: 0;
   left: 0;
-  /* border: 2px solid red; */
   width: 70px;
   height: 70px;
   background: rgb(242 226 226 / 40%);
@@ -36,10 +29,6 @@
 }
 
 .result {
-  /* position: absolute;
-  left: 100%;
-  top: 100px; */
-  /* border: 2px solid green; */
   width: 300px;
   height: 300px;
   border-radius: 8px;
@@ -86,4 +75,22 @@
 .pcontents .category {
   color: gray;
   font-weight: 500;
+}
+
+.related-cards {
+  display: flex;
+  /* border: 2px solid lime; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px; /* Space between cards */
+}
+
+.related-cards a {
+  text-decoration: none;
+}
+
+  .top-cards {
+    width: 100%;
+    display: flex;
+    /* border: 2px solid red; */
 }
