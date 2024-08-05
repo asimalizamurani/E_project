@@ -23,10 +23,11 @@ $result = $con->query($sql);
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
-    <div id="searched-products">
     <h1>Search Results</h1>
+    <!-- <div id="searched-products">
     <div id="product-grid">
-    <ul>
+    <ul> -->
+    <div class='related-cards'>
         <?php
         if ($result->num_rows > 0) {
             // Output data of each row
@@ -36,25 +37,25 @@ $result = $con->query($sql);
 
                 // The complete card
                 echo "
-               <form action='Insertcart.php' method='POST'>
-                 <div class='card'>
-                 <div class='img-section'>
-                     <img src='../admin/product/$row[Pimage]' alt=''>
-                     </div>
-                     <div class='card-contents'>
-                         <h4>$row[PName]</h4>
-                         <div class='card-center-content'>
-                         <p>RS: $row[PPrice]</p>
-                         <input type='hidden' name='PName' value='$row[PName]'>
-                         <input type='hidden' name='PPrice' value='$row[PPrice]'>
-                         <input type='number'name='PQuantity' class='qnt' placeholder='1'>
-                         </div>
-                         <div class='cart-btn'>
-                         <input type='submit' name='addCart' class='add-btn' value='Add To Cart'>
-                         </div>
-                     </div>
-                 </div>
-                 </form>
+               <a href='card-details.php?productId=$row[Id]'>
+            <div class='top-cards'>
+                <div class='card'>
+                    <div class='img-section'>
+                        <img src='../admin/product/$row[Pimage]' alt=''>
+                    </div>
+                    <div class='card-contents'>
+                        <h4>$row[PName]</h4>
+                        <div class='card-center-content'>
+                            <p>RS: $row[PPrice]</p>
+                            
+                        </div>
+                        <div class='cart-btn'>
+                            <input type='submit' name='addCart' class='add-btn' value='See More'>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </a>
                  ";
                 
             }
@@ -71,9 +72,10 @@ $result = $stmt->get_result();
 
 
 ?>
-    </ul>
-    </div>
 </div>
+    <!-- </ul>
+    </div>
+</div> -->
 
 <script src="./JS/index.js"></script>
 

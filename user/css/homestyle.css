@@ -169,6 +169,10 @@ html, body {
     outline: none;
 }
 
+form a {
+    text-decoration: none;
+}
+
 .form {
     display: flex;
     width: 35vw;
