@@ -46,7 +46,9 @@ echo "
 ";
 ?>
 
-<h2 id='top-products'>Top Products</h2>
+<div id="card-detail-h2">
+<h2>Top Products</h2>
+</div>
 <div class='related-cards'>
     <?php
     include 'Config.php';

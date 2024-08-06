@@ -26,8 +26,8 @@ function moveLens(e) {
 }
 
 function getMousePosition(e) {
-  let x = e.clientX - lensRect.left - lensRect.width / 2;
-  let y = e.clientY - lensRect.top - lensRect.height / 2;
+  let x = e.clientX - lensRect.left - lensRect.width / 3;
+  let y = e.clientY - lensRect.top - lensRect.height / 3;
 
   let minX = 0;
   let minY = 0;

@@ -10,9 +10,22 @@
   overflow: hidden;
 }
 
-#top-products {
-  display: flex;
-  justify-content: center;
+#card-detail-h2 {
+  text-align: center;
+  color: #8536D3;
+  font-size: 20px;
+  position: relative;
+}
+
+#card-detail-h2 h2:before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 3px;
+  /* background-color: #c830ff; */
+  background-color: #30dcff;
+  bottom: -2px;
+  border-radius: 5px;
 }
 
 .image {
