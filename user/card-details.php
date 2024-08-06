@@ -19,7 +19,7 @@ $row = mysqli_fetch_assoc($result);
 echo "
 <link rel='stylesheet' href='./css/product-details.css'>
 
-
+<div id='top-products'>
 <form action='Insertcart.php' method='POST'>
 <div class='product-details'>
     <div class='image imageCon'>
@@ -42,6 +42,7 @@ echo "
     </div>
     </div>
     </form>
+    </div>
 ";
 ?>
 
