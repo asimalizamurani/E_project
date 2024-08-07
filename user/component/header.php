@@ -147,7 +147,11 @@
                 </form>
                 </div>  
 
-    <!-- Category Navbar -->
+
+                
+                         <!-- Category Navbar Starts Here -->
+
+
     <div class='category-nav'>
         <?php
         include "./Config.php";

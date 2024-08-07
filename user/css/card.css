@@ -110,6 +110,8 @@ html, body {
     border: none;
     text-align: center;
     border-radius: 6px;
+    /* cursor: wait; */
+    cursor: pointer;
 }
 
 /* .card {
