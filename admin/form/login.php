@@ -32,7 +32,6 @@
       </div>
       <button type="submit">Log In</button>
       <div class="register">
-        <p>Don't have an account? <a href="#">Register</a></p>
       </div>
     </form>
   </div>
