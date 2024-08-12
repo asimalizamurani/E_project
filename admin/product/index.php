@@ -62,6 +62,7 @@
             $Record = mysqli_query($con, "SELECT * FROM `tblproduct`");
 
             while($row = mysqli_fetch_array($Record))
+            while($row = mysqli_fetch_array($Record)) {
 
             echo"
             <form action='update.php' method='GET'>
@@ -76,8 +77,10 @@
         </tr>
             </form>
             ";
+            }
             ?>
         </tbody>
+        
     </table>
     </div>
 

@@ -4,7 +4,6 @@ include './component/header.php';
 ?>
 
     <div id="main">
-    <!-- <h1 id="main-heading">Home</h1> -->
 
     <!-- Video Section -->
     <div id="video-section">

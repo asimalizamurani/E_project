@@ -1,7 +1,7 @@
 
  <?php
 
-include ('../Config.php');
+include '../Config.php';
 
 // $Name = $_POST['name'];
 $Name = strtolower($_POST['name']);

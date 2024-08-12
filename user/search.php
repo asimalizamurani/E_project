@@ -24,18 +24,13 @@ $result = $con->query($sql);
 </head>
 <body>
     <h1>Search Results</h1>
-    <!-- <div id="searched-products">
-    <div id="product-grid">
-    <ul> -->
+    
     <div class='related-cards'>
         <?php
         if ($result->num_rows > 0) {
             // Output data of each row
             while($row = $result->fetch_assoc()) {
-                // echo "<li>" . $row["PName"] . " - " . $row["PPrice"] . "</li>";
-                // echo "<li><a href='product.php?id=" . $row["Id"] . "'>" . $row["PName"] . "</a> - " . $row["PPrice"] . "</li>";
 
-                // The complete card
                 echo "
                <a href='card-details.php?productId=$row[Id]'>
             <div class='top-cards'>
@@ -73,9 +68,6 @@ $result = $stmt->get_result();
 
 ?>
 </div>
-    <!-- </ul>
-    </div>
-</div> -->
 
 <script src="./JS/index.js"></script>
 

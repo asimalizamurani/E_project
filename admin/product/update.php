@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,68 +10,51 @@
 <body>
 
 <?php
-$id = $_GET['ID'];
-// echo $id;
+if (isset($_GET['ID'])) {
+    $id = $_GET['ID'];
+} else {
+    echo "ID is not set.";
+    exit;
+}
 
 include 'Config.php';
-$result = mysqli_query($con, "SELECT * FROM `tblproduct` WHERE Id = $id ");
+$result = mysqli_query($con, "SELECT * FROM tblproduct WHERE Id = $id");
+if (!$result) {
+    echo "Query failed: " . mysqli_error($con);
+    exit;
+}
 $data = mysqli_fetch_array($result);
-
 ?>
 
-<form action="update.php" method="POST" enctype="multipart/form-data" class="admin-form">
+<form action="update1.php" method="POST" enctype="multipart/form-data" class="admin-form">
     <div class="form-section">
         <h2>Product Update:</h2>
         <div class="form-fields">
-        <label for="">Product Name:</label>
-        <input type="text" value="<?php echo $data['PName'] ?>" name="Pname" class="form-control" placeholder="Enter Product Name">
+            <label for="">Product Name:</label>
+            <input type="text" value="<?php echo $data['PName'] ?>" name="Pname" class="form-control" placeholder="Enter Product Name">
         </div>
         <div class="form-fields">
-        <label for="">Product Price:</label>
-        <input type="text" value="<?php echo $data['PPrice'] ?>" name="Pprice" class="form-control" placeholder="Product Price">
+            <label for="">Product Price:</label>
+            <input type="text" value="<?php echo $data['PPrice'] ?>" name="Pprice" class="form-control" placeholder="Product Price">
         </div>
         <div class="form-fields">
-        <label for="">Add Product Image:</label>
-        <input type="file" name="Pimage" class="form-control">
-        <img src="<?php echo $data['Pimage'] ?>" alt="">
+            <label for="">Add Product Image:</label>
+            <input type="file" name="Pimage" class="form-control">
+            <img src="<?php echo $data['Pimage'] ?>" alt="">
         </div>
         <div class="form-fields">
-        <label for="">Select Product Category:</label>
-        <select class="form-select" name="Pages">
-            <option value="Home">Home</option>
-            <option value="Gold">Gold</option>
-            <option value="Silver">Silver</option>
-            <option value="Pearl">Pearl</option>
-        </select>
+            <label for="">Select Product Category:</label>
+            <select class="form-select" name="Pages">
+                <option value="Home" <?php echo ($data['PCategory'] == 'Home') ? 'selected' : ''; ?>>Home</option>
+                <option value="Gold" <?php echo ($data['PCategory'] == 'Gold') ? 'selected' : ''; ?>>Gold</option>
+                <option value="Silver" <?php echo ($data['PCategory'] == 'Silver') ? 'selected' : ''; ?>>Silver</option>
+                <option value="Pearl" <?php echo ($data['PCategory'] == 'Pearl') ? 'selected' : ''; ?>>Pearl</option>
+            </select>
         </div>
-        <input type="hidden" name="id" value="<?php echo $data['Id'] ?>">
+        <input type="hidden" name="updateid" value="<?php echo $data['Id'] ?>">
         <button name="update" class="">Update</button>
     </div>
 </form>
-
-<!-- Php update code  -->
- <?php
-
-
-if(isset($_POST['update'])) {
- $id = $_POST['id'];
- $product_name = $_POST['Pname'];
- $product_price = $_POST['Pprice'];
- $product_image = $_FILES['Pimage'];
- $image_loc = $_FILES['Pimage']['tmp_name'];
- $image_name = $_FILES['Pimage']['name'];
- $img_des = "Uploadimage/" . $image_name;
- move_uploaded_file($image_loc, "Uploadimage/" . $image_name);
- 
- $product_category = $_POST['Pages'];
-
- include 'Config.php';
- 
- mysqli_query($con, "UPDATE `tblproduct` SET `PName`='$product_name',`PPrice`=' $product_price',`Pimage`='$img_des',`PCategory`=' $product_category' WHERE Id = $id");
-      header("location: index.php");
-   
-   }
- ?>
 
 </body>
 </html>
