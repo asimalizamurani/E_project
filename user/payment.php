@@ -1,5 +1,5 @@
 
-
+<title>BSELLER.COM | Payment</title>
 
 <form action="process_transfer.php" method="post">
     <label for="amount">Amount:</label>

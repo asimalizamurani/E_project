@@ -3,6 +3,8 @@
 include './component/header.php';
 ?>
 
+<title>BSELLER.COM | Home</title>
+
     <div id="main">
 
     <!-- Video Section -->

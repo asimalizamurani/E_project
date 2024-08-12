@@ -4,6 +4,8 @@
 include './component/header.php';
 ?>
 
+<title>BSELLER.COM | Cart</title>
+
     <h1 id='c-heading'>My Cart</h1>
 
     <!-- start -->

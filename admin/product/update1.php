@@ -5,11 +5,6 @@ if (isset($_POST['update'])) {
     $id = $_POST['updateid'];
     $product_name = $_POST['Pname'];
     $product_price = $_POST['Pprice'];
-    // $product_image = $_FILES['Pimage'];
-    // $image_loc = $_FILES['Pimage']['tmp_name'];
-    // $image_name = $_FILES['Pimage']['name'];
-    // $img_des = "Uploadimage/" . $image_name;
-    // move_uploaded_file($image_loc, $img_des);
 
     // Check if a new image has been uploaded
     include "Config.php";

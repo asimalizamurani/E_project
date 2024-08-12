@@ -3,6 +3,8 @@
      include './component/header.php';
      ?>
 
+<title>BSELLER.COM | Silver</title>
+
 <div class='card-section'>
         <div class="card-heading">
         <h2>Silver Jewellry</h2>

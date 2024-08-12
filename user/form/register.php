@@ -42,5 +42,7 @@
       </div>
     </form>
   </div>
+
+  <script src="../JS/formvalidate.js"></script>
 </body>
 </html>
